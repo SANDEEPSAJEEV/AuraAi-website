@@ -1,15 +1,14 @@
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background gradient blobs */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-brand-600/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-accent/15 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 sm:w-96 md:w-[600px] h-48 sm:h-96 md:h-[600px] bg-brand-900/30 rounded-full blur-3xl" />
+      {/* Background gradient - subtle */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-20 right-20 w-80 h-80 bg-cyan-600/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-60 h-60 bg-brand-600/10 rounded-full blur-3xl" />
       </div>
 
-      {/* Grid pattern overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      {/* Grid pattern - very subtle */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.01)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
       <div className="relative max-w-7xl mx-auto px-6 text-center">
         {/* Badge */}
