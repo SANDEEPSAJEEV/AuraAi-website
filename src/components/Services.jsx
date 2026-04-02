@@ -42,9 +42,9 @@ export default function Services() {
     <section id="services" className="py-24 bg-[#0d0d14]">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-8 duration-700">
-          <p className="text-brand-400 text-sm font-semibold uppercase tracking-widest mb-3">How We Help</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Services Built for Outcomes</h2>
+        <div className="text-center mb-12 sm:mb-16 animate-in fade-in slide-in-from-bottom-8 duration-700">
+          <p className="text-brand-400 text-xs sm:text-sm font-semibold uppercase tracking-widest mb-3">How We Help</p>
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">Services Built for Outcomes</h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             From strategy to production — we own every layer of your AI system and deliver it reliably.
           </p>
@@ -55,11 +55,11 @@ export default function Services() {
           {services.map((s, idx) => (
             <div
               key={s.title}
-              className="group relative p-6 rounded-2xl border border-white/5 bg-white/[0.03] hover:bg-white/[0.06] hover:border-brand-500/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-brand-500/20 animate-in fade-in slide-in-from-bottom-6 duration-700"
+              className="group relative p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-white/5 bg-white/[0.03] hover:bg-white/[0.06] hover:border-brand-500/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-brand-500/20 animate-in fade-in slide-in-from-bottom-6 duration-700"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
-              <div className="text-4xl mb-4">{s.icon}</div>
-              <h3 className="text-xl font-semibold text-white mb-2">{s.title}</h3>
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">{s.icon}</div>
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">{s.title}</h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">{s.desc}</p>
               <div className="flex flex-wrap gap-2">
                 {s.tags.map(t => (

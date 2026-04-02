@@ -54,7 +54,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-12 max-w-6xl mx-auto">
           {/* Left info */}
           <div className="lg:col-span-2 space-y-8">
             <div>
@@ -88,9 +88,9 @@ export default function Contact() {
           {/* Form */}
           <div className="lg:col-span-3 animate-in fade-in slide-in-from-right-8 duration-700">
             {submitted ? (
-              <div className="h-full flex items-center justify-center p-12 rounded-2xl border border-emerald-500/20 bg-emerald-900/10 text-center animate-in bounce-in duration-500">
+              <div className="h-full flex items-center justify-center p-6 sm:p-12 rounded-xl sm:rounded-2xl border border-emerald-500/20 bg-emerald-900/10 text-center animate-in bounce-in duration-500">
                 <div>
-                  <div className="text-5xl mb-4">✅</div>
+                  <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">✅</div>
                   <h3 className="text-white font-bold text-xl mb-2">Message sent successfully!</h3>
                   <p className="text-slate-400 text-sm">Thank you for reaching out. We'll review your inquiry and get back to you within 24 hours.</p>
                   <button onClick={() => setSubmitted(false)} className="mt-6 text-brand-400 hover:text-brand-300 text-sm underline">
@@ -99,7 +99,7 @@ export default function Contact() {
                 </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5 p-8 rounded-2xl border border-white/5 bg-white/[0.02]">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5 p-4 sm:p-8 rounded-xl sm:rounded-2xl border border-white/5 bg-white/[0.02]">
                 {error && (
                   <div className="p-4 rounded-lg border border-red-500/30 bg-red-900/10 text-red-400 text-sm">
                     {error}
