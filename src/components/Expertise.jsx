@@ -21,19 +21,19 @@ export default function Expertise() {
     <section id="expertise" className="py-24 bg-[#0a0a0f]">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-8 duration-700">
-          <p className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">What We Solve</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Solutions That Work</h2>
+        <div className="text-center mb-12 sm:mb-16 animate-in fade-in slide-in-from-bottom-8 duration-700">
+          <p className="text-accent text-xs sm:text-sm font-semibold uppercase tracking-widest mb-3">What We Solve</p>
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">Solutions That Work</h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             We've solved real problems across every major AI domain. No experimental projects. No research papers. Just systems that perform.
           </p>
         </div>
 
         {/* Expertise grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 mb-12 sm:mb-16">
           {areas.map((a, idx) => (
-            <div key={a.label} className="flex gap-4 p-5 rounded-xl border border-white/5 bg-white/[0.02] hover:border-accent/20 hover:bg-white/[0.04] transition-all hover:scale-105 hover:shadow-lg animate-in fade-in slide-in-from-bottom-6 duration-500" style={{ animationDelay: `${idx * 50}ms` }}>
-              <div className="text-2xl flex-shrink-0 mt-0.5">{a.icon}</div>
+            <div key={a.label} className="flex gap-3 sm:gap-4 p-4 sm:p-5 rounded-lg sm:rounded-xl border border-white/5 bg-white/[0.02] hover:border-accent/20 hover:bg-white/[0.04] transition-all hover:scale-105 hover:shadow-lg animate-in fade-in slide-in-from-bottom-6 duration-500" style={{ animationDelay: `${idx * 50}ms` }}>
+              <div className="text-xl sm:text-2xl flex-shrink-0 mt-0.5">{a.icon}</div>
               <div>
                 <h3 className="text-white font-semibold mb-1">{a.label}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{a.desc}</p>
@@ -44,10 +44,10 @@ export default function Expertise() {
 
         {/* Tech stack */}
         <div className="text-center animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
-          <p className="text-slate-500 text-sm uppercase tracking-widest mb-6">Tech Stack We Work With</p>
-          <div className="flex flex-wrap justify-center gap-3">
+          <p className="text-slate-500 text-xs sm:text-sm uppercase tracking-widest mb-4 sm:mb-6">Tech Stack We Work With</p>
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
             {techStack.map((t, idx) => (
-              <span key={t} className="px-4 py-2 rounded-full border border-white/10 bg-white/[0.03] text-slate-300 text-sm font-medium hover:border-brand-500/40 hover:text-white transition-all hover:scale-110 animate-in fade-in zoom-in duration-500" style={{ animationDelay: `${idx * 30}ms` }}>
+              <span key={t} className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-white/10 bg-white/[0.03] text-slate-300 text-xs sm:text-sm font-medium hover:border-brand-500/40 hover:text-white transition-all hover:scale-110 animate-in fade-in zoom-in duration-500" style={{ animationDelay: `${idx * 30}ms` }}>
                 {t}
               </span>
             ))}

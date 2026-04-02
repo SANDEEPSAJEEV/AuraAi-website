@@ -53,9 +53,9 @@ export default function Team() {
   return (
     <section id="team" className="py-24 bg-[#0a0a0f]">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">Built for Results</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Experts Who Deliver</h2>
+        <div className="text-center mb-12 sm:mb-16">
+          <p className="text-accent text-xs sm:text-sm font-semibold uppercase tracking-widest mb-3">Built for Results</p>
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">Experts Who Deliver</h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Every team is built around one principle: shipping solutions that work. No shortcuts. No excuses.
           </p>
@@ -63,8 +63,8 @@ export default function Team() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-16">
           {teams.map((t, idx) => (
-            <div key={t.title} className={`p-6 rounded-2xl border ${t.color} transition-all hover:scale-105 hover:shadow-lg animate-in fade-in slide-in-from-bottom-6 duration-700`} style={{ animationDelay: `${idx * 150}ms` }}>
-              <div className="text-4xl mb-4">{t.icon}</div>
+            <div key={t.title} className={`p-4 sm:p-6 rounded-xl sm:rounded-2xl border ${t.color} transition-all hover:scale-105 hover:shadow-lg animate-in fade-in slide-in-from-bottom-6 duration-700`} style={{ animationDelay: `${idx * 150}ms` }}>
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">{t.icon}</div>
               <h3 className="text-xl font-bold text-white mb-1">{t.title}</h3>
               <p className="text-slate-500 text-sm mb-5">{t.members}</p>
               <ul className="space-y-2">
@@ -80,9 +80,9 @@ export default function Team() {
         </div>
 
         {/* Our Commitment */}
-        <div className="max-w-3xl mx-auto p-8 rounded-2xl border border-brand-500/20 bg-brand-900/10 text-center">
-          <div className="text-4xl mb-4">🎯</div>
-          <h3 className="text-xl font-bold text-white mb-3">Our Promise</h3>
+        <div className="max-w-3xl mx-auto p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-brand-500/20 bg-brand-900/10 text-center">
+          <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🎯</div>
+          <h3 className="text-lg sm:text-xl font-bold text-white mb-3">Our Promise</h3>
           <p className="text-slate-400 text-sm leading-relaxed">
             We don't hire more people to impress you. We hire the right people to deliver results.
             Your success isn't a side project—it's our entire focus. We take responsibility for every line of code,
