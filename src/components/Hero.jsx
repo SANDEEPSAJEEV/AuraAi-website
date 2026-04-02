@@ -13,8 +13,8 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-6 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent/30 bg-accent/10 text-accent text-xs sm:text-sm font-semibold uppercase tracking-wider mb-6 sm:mb-8 transition-all duration-400">
-          <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs sm:text-sm font-semibold uppercase tracking-wider mb-6 sm:mb-8">
+          <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
           Your Product. Our Responsibility.
         </div>
 
@@ -33,13 +33,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 w-full px-4 sm:px-0">
           <a
             href="#contact"
-            className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-brand-600 to-accent text-white font-semibold rounded-lg sm:rounded-xl transition-all duration-400 text-sm sm:text-base lg:text-lg hover:shadow-lg hover:shadow-accent/40 hover:scale-105 active:scale-95"
+            className="px-6 sm:px-8 py-3 sm:py-4 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg sm:rounded-xl transition-all duration-400 text-sm sm:text-base lg:text-lg hover:shadow-lg hover:shadow-cyan-500/40 active:scale-95"
           >
             Start a Project
           </a>
           <a
             href="#services"
-            className="px-6 sm:px-8 py-3 sm:py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold rounded-lg sm:rounded-xl transition-all duration-400 text-sm sm:text-base lg:text-lg hover:scale-105 active:scale-95 hover:border-accent/50"
+            className="px-6 sm:px-8 py-3 sm:py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold rounded-lg sm:rounded-xl transition-all duration-400 text-sm sm:text-base lg:text-lg active:scale-95 hover:border-cyan-500/50"
           >
             Explore Services
           </a>

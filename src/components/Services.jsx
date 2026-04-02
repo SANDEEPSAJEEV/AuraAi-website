@@ -55,7 +55,7 @@ export default function Services() {
           {services.map((s, idx) => (
             <div
               key={s.title}
-              className="group relative p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.08] hover:border-accent/50 transition-all duration-400 hover:scale-105 hover:shadow-lg hover:shadow-accent/25 animate-in fade-in slide-in-from-bottom-6 duration-700"
+              className="group relative p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.08] hover:border-cyan-500/40 transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20 animate-in fade-in slide-in-from-bottom-6 duration-700"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
               <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">{s.icon}</div>

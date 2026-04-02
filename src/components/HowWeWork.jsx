@@ -60,7 +60,7 @@ export default function HowWeWork() {
             { icon: '🔍', title: 'Total Transparency', desc: 'You understand your system. Full documentation, code reviews, and honest progress updates.' },
             { icon: '📈', title: 'Results You Can Measure', desc: 'Every deliverable has clear success metrics. You see ROI, not just activity.' },
           ].map(c => (
-            <div key={c.title} className="flex gap-3 sm:gap-4 p-4 sm:p-6 rounded-lg sm:rounded-xl border border-white/5 bg-white/[0.02]">
+            <div key={c.title} className="flex gap-3 sm:gap-4 p-4 sm:p-6 rounded-lg sm:rounded-xl border border-white/5 bg-white/[0.02] hover:border-cyan-500/30 hover:shadow-cyan-500/10 transition-all duration-300 hover:shadow-lg">
               <div className="text-2xl sm:text-3xl flex-shrink-0">{c.icon}</div>
               <div>
                 <h3 className="text-white font-semibold mb-1">{c.title}</h3>

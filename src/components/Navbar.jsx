@@ -13,7 +13,7 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${scrolled ? 'bg-[#020617]/95 backdrop-blur-md border-b border-white/5' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-md border-b border-white/5' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* CTA */}
         <a
           href="#contact"
-          className="hidden md:inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-brand-600 to-accent text-white text-sm font-semibold rounded-lg hover:shadow-lg hover:shadow-accent/30 transition-all duration-400 cubic-bezier(0.25, 0.1, 0.25, 1) hover:scale-105"
+          className="hidden md:inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/40 transition-all duration-300"
         >
           Get in Touch
         </a>
