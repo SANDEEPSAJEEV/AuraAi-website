@@ -160,7 +160,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full py-4 bg-brand-600 hover:bg-brand-500 disabled:bg-slate-600 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-brand-600/30 text-sm"
+                  className="w-full py-4 bg-gradient-to-r from-brand-600 to-accent disabled:from-slate-600 disabled:to-slate-600 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-all duration-400 hover:shadow-lg hover:shadow-accent/40 text-sm hover:scale-105 active:scale-95"
                 >
                   {loading ? 'Sending...' : 'Send Message →'}
                 </button>

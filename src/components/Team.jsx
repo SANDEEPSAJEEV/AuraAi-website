@@ -63,7 +63,7 @@ export default function Team() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-16">
           {teams.map((t, idx) => (
-            <div key={t.title} className={`p-4 sm:p-6 rounded-xl sm:rounded-2xl border ${t.color} transition-all hover:scale-105 hover:shadow-lg animate-in fade-in slide-in-from-bottom-6 duration-700`} style={{ animationDelay: `${idx * 150}ms` }}>
+            <div key={t.title} className={`p-4 sm:p-6 rounded-xl sm:rounded-2xl border transition-all duration-400 hover:scale-105 hover:shadow-lg hover:shadow-accent/20 animate-in fade-in slide-in-from-bottom-6 duration-700 ${t.color}`} style={{ animationDelay: `${idx * 150}ms` }}>
               <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">{t.icon}</div>
               <h3 className="text-xl font-bold text-white mb-1">{t.title}</h3>
               <p className="text-slate-500 text-sm mb-5">{t.members}</p>
