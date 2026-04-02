@@ -45,6 +45,16 @@ html {
   50% { background-position: 100% center; }
 }
 
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+@keyframes glow-in {
+  0% { box-shadow: 0 0 0px rgba(34, 211, 238, 0); }
+  100% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.3); }
+}
+
 @keyframes slide-in-left {
   from { transform: translateX(-40px); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
@@ -89,6 +99,16 @@ html {
 
 .animate-bounce-in {
   animation: bounce-in 0.5s ease-out;
+}
+
+.animate-shimmer {
+  animation: shimmer 3s infinite;
+  background-image: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  background-size: 1000px 100%;
+}
+
+.animate-glow-in {
+  animation: glow-in 1.5s ease-out forwards;
 }
 
 /* Professional Transitions */

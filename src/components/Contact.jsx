@@ -77,9 +77,9 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="p-5 rounded-xl border border-white/5 bg-white/[0.02]">
+            <div className="p-5 rounded-xl border border-white/5 bg-gradient-to-br from-white/[0.02] to-white/[0.01] hover:border-cyan-500/40 hover:bg-gradient-to-br hover:from-cyan-600/10 hover:to-brand-600/10 transition-all duration-400 hover:shadow-lg hover:shadow-cyan-500/20">
               <p className="text-slate-400 text-sm mb-3">Reach us directly</p>
-              <a href="mailto:sandeeps@aura-vision.tech" className="text-brand-400 hover:text-brand-300 font-medium text-sm break-all">
+              <a href="mailto:sandeeps@aura-vision.tech" className="text-brand-400 hover:text-cyan-400 font-medium text-sm break-all transition-colors duration-300">
                 sandeeps@aura-vision.tech
               </a>
             </div>
@@ -99,7 +99,7 @@ export default function Contact() {
                 </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5 p-4 sm:p-8 rounded-xl sm:rounded-2xl border border-white/5 bg-white/[0.02]">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5 p-4 sm:p-8 rounded-xl sm:rounded-2xl border border-white/5 bg-gradient-to-br from-white/[0.02] to-white/[0.01] hover:border-cyan-500/30 transition-all duration-300">
                 {error && (
                   <div className="p-4 rounded-lg border border-red-500/30 bg-red-900/10 text-red-400 text-sm">
                     {error}
@@ -160,7 +160,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full py-4 bg-cyan-500 hover:bg-cyan-600 disabled:bg-slate-600 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-all duration-500 hover:shadow-lg hover:shadow-cyan-500/40 text-sm active:scale-95"
+                  className="w-full py-4 bg-cyan-500 hover:bg-cyan-600 disabled:bg-slate-600 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 text-sm active:scale-95 hover:scale-[1.02]"
                 >
                   {loading ? 'Sending...' : 'Send Message →'}
                 </button>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const links = ['Services', 'Expertise', 'How We Work', 'Team', 'Contact']
+const links = ['Services', 'Expertise', 'Team', 'Contact']
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* CTA */}
         <a
           href="#contact"
-          className="hidden md:inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/40 transition-all duration-300"
+          className="hidden md:inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold rounded-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-110"
         >
           Get in Touch
         </a>

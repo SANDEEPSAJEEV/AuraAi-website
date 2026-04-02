@@ -32,7 +32,7 @@ export default function Expertise() {
         {/* Expertise grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 mb-12 sm:mb-16">
           {areas.map((a, idx) => (
-            <div key={a.label} className="flex gap-3 sm:gap-4 p-4 sm:p-5 rounded-lg sm:rounded-xl border border-white/5 bg-white/[0.02] hover:border-cyan-500/30 hover:bg-white/[0.04] transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/15 animate-in fade-in slide-in-from-bottom-6 duration-500" style={{ animationDelay: `${idx * 50}ms` }}>
+            <div key={a.label} className="flex gap-3 sm:gap-4 p-4 sm:p-5 rounded-lg sm:rounded-xl border border-white/5 bg-gradient-to-br from-white/[0.02] to-white/[0.01] hover:border-cyan-400/60 hover:bg-gradient-to-br hover:from-cyan-600/15 hover:to-brand-600/10 transition-all duration-400 hover:scale-110 hover:shadow-xl hover:shadow-cyan-500/25 animate-in fade-in slide-in-from-bottom-6 duration-500" style={{ animationDelay: `${idx * 50}ms` }}>
               <div className="text-xl sm:text-2xl flex-shrink-0 mt-0.5">{a.icon}</div>
               <div>
                 <h3 className="text-white font-semibold mb-1">{a.label}</h3>

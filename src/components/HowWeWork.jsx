@@ -39,10 +39,10 @@ export default function HowWeWork() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {steps.map((s, i) => (
-            <div key={s.number} className="relative p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-white/5 bg-white/[0.02]">
+            <div key={s.number} className="relative p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-white/5 bg-gradient-to-br from-white/[0.02] to-white/[0.01] hover:border-cyan-500/40 hover:bg-gradient-to-br hover:from-cyan-600/10 hover:to-brand-600/10 transition-all duration-400 hover:shadow-lg hover:shadow-cyan-500/20 animate-in fade-in slide-in-from-bottom-6 duration-500" style={{ animationDelay: `${i * 100}ms` }}>
               {/* Connector line */}
               {i < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-10 left-full w-full h-px bg-gradient-to-r from-white/10 to-transparent z-10 -translate-x-1/2" />
+                <div className="hidden lg:block absolute top-10 left-full w-full h-px bg-gradient-to-r from-cyan-500/30 via-white/10 to-transparent z-10 -translate-x-1/2" />
               )}
               <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br ${s.color} text-white font-bold text-lg mb-4`}>
                 {s.number}
