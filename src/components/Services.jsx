@@ -30,10 +30,10 @@ const services = [
     tags: ['React', 'Node.js', 'REST APIs', 'SaaS Platforms'],
   },
   {
-    icon: '🛡️',
-    title: 'QA & Software Testing',
-    desc: 'Comprehensive testing including functional, performance, security vulnerability assessments, and automated test suites.',
-    tags: ['Automation Testing', 'Security QA', 'Load Testing', 'CI/CD'],
+    icon: '⚙️',
+    title: 'Business Automation & Integration',
+    desc: 'Cloud automation, AI-powered workflows, WhatsApp business integration, eCommerce automation, and seamless system integration for operational efficiency.',
+    tags: ['Cloud Automation', 'WhatsApp API', 'eCommerce Integration', 'Workflow Automation'],
   },
 ]
 

@@ -25,9 +25,9 @@ export default function Team() {
               skills: ['Web Applications', 'APIs', 'Databases', 'Cloud Deployment', 'Production Systems']
             },
             {
-              icon: '🛡️',
-              title: 'Quality Assurance',
-              skills: ['Testing & Validation', 'Security Review', 'Performance Testing', 'Production Monitoring']
+              icon: '⚙️',
+              title: 'Automation & Integration',
+              skills: ['Cloud Automation', 'WhatsApp API', 'eCommerce Integration', 'Workflow Automation', 'System Integration', 'API Management']
             },
           ].map(area => (
             <div key={area.title} className="p-6 rounded-xl border border-white/5 bg-white/[0.02] hover:border-cyan-500/30 transition-all">
