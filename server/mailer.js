@@ -29,7 +29,7 @@ export async function sendEmail(formData) {
       </div>
 
       <div style="background: #f3f4f6; padding: 15px; border-radius: 8px; margin-top: 15px; text-align: center; font-size: 12px; color: #666;">
-        <p style="margin: 0;">This email was sent from your Percepta AI website contact form.</p>
+        <p style="margin: 0;">This email was sent from your Aura AI website contact form.</p>
       </div>
     </div>
   `;

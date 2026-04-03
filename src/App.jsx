@@ -4,6 +4,8 @@ import Services from './components/Services'
 import Expertise from './components/Expertise'
 import HowWeWork from './components/HowWeWork'
 import Team from './components/Team'
+import Guarantee from './components/Guarantee'
+import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -16,6 +18,8 @@ function App() {
       <Expertise />
       <HowWeWork />
       <Team />
+      <Guarantee />
+      <FAQ />
       <Contact />
       <Footer />
     </div>
