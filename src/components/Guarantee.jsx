@@ -9,29 +9,7 @@ export default function Guarantee() {
           We're confident in what we build. That's why we can discuss outcome-based or hybrid engagement models
           where our payment reflects the value delivered. The solution matters more than the process.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center text-sm">
-          <div className="flex items-start gap-3">
-            <span className="text-cyan-400 font-bold text-lg">✓</span>
-            <div className="text-left">
-              <div className="text-white font-semibold">Fixed Project Cost</div>
-              <div className="text-slate-500">Clear scope, clear price</div>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="text-cyan-400 font-bold text-lg">✓</span>
-            <div className="text-left">
-              <div className="text-white font-semibold">Outcome-Based</div>
-              <div className="text-slate-500">We succeed when you do</div>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="text-cyan-400 font-bold text-lg">✓</span>
-            <div className="text-left">
-              <div className="text-white font-semibold">Hybrid Models</div>
-              <div className="text-slate-500">Let's design what works</div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   )
