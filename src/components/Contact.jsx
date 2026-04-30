@@ -92,10 +92,10 @@ export default function Contact() {
               <div className="p-5 rounded-xl border border-cyan-500/20 bg-gradient-to-br from-cyan-500/10 to-blue-500/5">
                 <p className="text-slate-400 text-xs uppercase tracking-widest mb-2">Prefer email?</p>
                 <a
-                  href="mailto:sandeeps@aura-vision.tech"
+                  href="mailto:sales@aura-vision.tech"
                   className="text-cyan-400 hover:text-cyan-300 font-semibold text-sm break-all transition-colors inline-flex items-center gap-2"
                 >
-                  sandeeps@aura-vision.tech
+                  sales@aura-vision.tech
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M7 7h10v10" /></svg>
                 </a>
               </div>

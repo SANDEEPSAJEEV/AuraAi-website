@@ -31,11 +31,11 @@ export default function Footer() {
               Engineering intelligent systems that ship to production. AI, automation, and web platforms — built right, delivered reliably.
             </p>
             <a
-              href="mailto:sandeeps@aura-vision.tech"
+              href="mailto:sales@aura-vision.tech"
               className="inline-flex items-center gap-2 mt-6 text-cyan-400 hover:text-cyan-300 text-sm font-medium transition-colors group"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
-              sandeeps@aura-vision.tech
+              sales@aura-vision.tech
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </a>
           </div>
