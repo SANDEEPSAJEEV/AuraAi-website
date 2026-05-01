@@ -54,7 +54,7 @@ const services = [
   {
     icon: 'vision',
     title: 'Computer Vision',
-    desc: 'YOLO and detection-transformer models for industrial inspection, PPE compliance, and edge CV. Runs on Jetson, Coral, or CPU — not just cloud.',
+    desc: 'Detection-transformer models for industrial inspection, PPE compliance, and edge CV. Runs on Jetson, Coral, or CPU — not just cloud.',
   },
   {
     icon: 'genai',
