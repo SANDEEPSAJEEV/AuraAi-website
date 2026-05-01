@@ -2,10 +2,9 @@ import { useState, useEffect } from 'react'
 import Logo from './Logo'
 
 const links = [
-  { label: 'Services', href: '#services' },
-  { label: 'Expertise', href: '#expertise' },
+  { label: 'What We Build', href: '#services' },
   { label: 'Process', href: '#how-we-work' },
-  { label: 'Team', href: '#team' },
+  { label: 'Capabilities', href: '#capabilities' },
   { label: 'FAQ', href: '#faq' },
 ]
 

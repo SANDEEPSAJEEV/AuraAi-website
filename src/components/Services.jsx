@@ -27,10 +27,6 @@ const Icon = ({ name }) => {
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 3v18h18" />
         <path d="M7 14l4-4 4 4 6-6" />
-        <circle cx="7" cy="14" r="1" fill="currentColor" />
-        <circle cx="11" cy="10" r="1" fill="currentColor" />
-        <circle cx="15" cy="14" r="1" fill="currentColor" />
-        <circle cx="21" cy="8" r="1" fill="currentColor" />
       </svg>
     ),
     web: (
@@ -53,113 +49,62 @@ const services = [
   {
     icon: 'ai',
     title: 'AI & Machine Learning',
-    desc: 'Custom ML models, predictive analytics, and AI-powered decision systems — built for production, not proof of concept.',
-    tags: ['Machine Learning', 'Deep Learning', 'AutoML', 'MLOps'],
-    color: 'from-cyan-500/20 to-blue-500/10',
-    border: 'group-hover:border-cyan-400/50',
-    iconBg: 'bg-cyan-500/10 group-hover:bg-cyan-500/20',
-    iconColor: 'text-cyan-400',
+    desc: 'Time-series forecasting, anomaly detection, classification. PyTorch and ONNX for deployment. We handle the full lifecycle, not just notebooks.',
   },
   {
     icon: 'vision',
     title: 'Computer Vision',
-    desc: 'Image classification, object detection, video analytics, and visual inspection systems for industrial and commercial applications.',
-    tags: ['Object Detection', 'Image Segmentation', 'Video AI', 'OCR'],
-    color: 'from-blue-500/20 to-indigo-500/10',
-    border: 'group-hover:border-blue-400/50',
-    iconBg: 'bg-blue-500/10 group-hover:bg-blue-500/20',
-    iconColor: 'text-blue-400',
+    desc: 'YOLO and detection-transformer models for industrial inspection, PPE compliance, and edge CV. Runs on Jetson, Coral, or CPU — not just cloud.',
   },
   {
     icon: 'genai',
     title: 'Generative AI & LLMs',
-    desc: 'Chatbots, AI assistants, RAG systems, fine-tuned LLMs and document intelligence using the latest GenAI models.',
-    tags: ['LLMs', 'VLMs', 'RAG', 'Chatbots', 'Fine-tuning'],
-    color: 'from-indigo-500/20 to-purple-500/10',
-    border: 'group-hover:border-indigo-400/50',
-    iconBg: 'bg-indigo-500/10 group-hover:bg-indigo-500/20',
-    iconColor: 'text-indigo-400',
+    desc: 'RAG and agentic workflows on LangGraph. Document intelligence, internal copilots, HITL review pipelines. Built to run inside your VPC if needed.',
   },
   {
     icon: 'data',
     title: 'Data Science & Analytics',
-    desc: 'End-to-end data pipelines, BI dashboards, advanced analytics, and actionable insights from your data.',
-    tags: ['Data Analysis', 'BI Dashboards', 'ETL Pipelines', 'NLP'],
-    color: 'from-teal-500/20 to-cyan-500/10',
-    border: 'group-hover:border-teal-400/50',
-    iconBg: 'bg-teal-500/10 group-hover:bg-teal-500/20',
-    iconColor: 'text-teal-400',
+    desc: 'ETL, BI dashboards, and analytics that turn raw operational data into something a non-data team can act on. Postgres, dbt, Metabase / Superset.',
   },
   {
     icon: 'web',
     title: 'Web Development',
-    desc: 'Modern full-stack applications, SaaS platforms, business portals, and AI-integrated web tools.',
-    tags: ['React', 'Node.js', 'REST APIs', 'SaaS Platforms'],
-    color: 'from-sky-500/20 to-blue-500/10',
-    border: 'group-hover:border-sky-400/50',
-    iconBg: 'bg-sky-500/10 group-hover:bg-sky-500/20',
-    iconColor: 'text-sky-400',
+    desc: 'Full-stack apps with React + Node/FastAPI. Used as the wrapper around AI workflows — admin UIs, internal tools, customer-facing portals.',
   },
   {
     icon: 'automation',
     title: 'Business Automation',
-    desc: 'Cloud workflows, WhatsApp business integration, eCommerce automation, and seamless system integrations for operational efficiency.',
-    tags: ['Cloud Automation', 'WhatsApp API', 'eCommerce', 'Workflow'],
-    color: 'from-emerald-500/20 to-teal-500/10',
-    border: 'group-hover:border-emerald-400/50',
-    iconBg: 'bg-emerald-500/10 group-hover:bg-emerald-500/20',
-    iconColor: 'text-emerald-400',
+    desc: 'Workflow automation across the tools your team already uses — Slack, WhatsApp, ERP, CRM. Low-friction adoption, not a rip-and-replace.',
   },
 ]
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-20 sm:py-28 bg-[#080810] overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-cyan-500/5 rounded-full blur-[100px] pointer-events-none" />
-
+    <section id="services" className="relative py-20 sm:py-28 bg-[#080810]">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <ScrollReveal>
           <div className="text-center mb-14 sm:mb-20">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/5 text-cyan-400 text-xs font-semibold uppercase tracking-[0.15em] mb-5">
               <span className="w-1 h-1 rounded-full bg-cyan-400" />
-              Our Services
+              What We Build
             </div>
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-5 leading-tight">
-              Everything you need,
-              <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                built right the first time.
-              </span>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
+              Six areas we focus on.
             </h2>
-            <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
-              From AI strategy to production deployment — we own every layer and deliver outcomes you can measure.
-            </p>
           </div>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {services.map((s, idx) => (
             <ScrollReveal key={s.title} delay={idx * 80}>
-              <div className={`group relative h-full p-6 sm:p-7 rounded-2xl border border-white/5 bg-gradient-to-br from-white/[0.03] to-white/[0.01] ${s.border} transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/10 overflow-hidden`}>
-                <div className={`absolute inset-0 bg-gradient-to-br ${s.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none`} />
-
-                <div className="relative">
-                  <div className={`inline-flex w-12 h-12 rounded-xl ${s.iconBg} ${s.iconColor} items-center justify-center mb-5 transition-all duration-500 group-hover:scale-110`}>
-                    <div className="w-6 h-6">
-                      <Icon name={s.icon} />
-                    </div>
-                  </div>
-
-                  <h3 className="text-xl font-bold text-white mb-3">{s.title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed mb-5">{s.desc}</p>
-
-                  <div className="flex flex-wrap gap-1.5">
-                    {s.tags.map(t => (
-                      <span key={t} className="px-2.5 py-1 rounded-md bg-white/[0.03] border border-white/10 text-slate-400 text-xs font-medium group-hover:border-white/20 group-hover:text-slate-300 transition-colors">
-                        {t}
-                      </span>
-                    ))}
+              <div className="group h-full p-6 sm:p-7 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-cyan-400/30 hover:bg-white/[0.04] transition-all duration-500 hover:-translate-y-1">
+                <div className="text-cyan-400 mb-5 transition-transform duration-500 group-hover:scale-110 origin-left">
+                  <div className="w-7 h-7">
+                    <Icon name={s.icon} />
                   </div>
                 </div>
+                <h3 className="text-xl font-bold text-white mb-3">{s.title}</h3>
+                <p className="text-slate-400 text-sm leading-relaxed">{s.desc}</p>
               </div>
             </ScrollReveal>
           ))}

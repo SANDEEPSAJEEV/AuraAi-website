@@ -13,7 +13,7 @@ export default function Logo({ size = 32, showText = true, className = '' }) {
           <linearGradient id="auraGradient" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#22d3ee" />
             <stop offset="50%" stopColor="#38bdf8" />
-            <stop offset="100%" stopColor="#6366f1" />
+            <stop offset="100%" stopColor="#3b82f6" />
           </linearGradient>
           <filter id="auraGlow" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur stdDeviation="2" result="coloredBlur" />
@@ -32,10 +32,7 @@ export default function Logo({ size = 32, showText = true, className = '' }) {
         <circle cx="20" cy="20" r="2" fill="#22d3ee" opacity="0.9" />
       </svg>
       {showText && (
-        <div className="flex flex-col leading-none">
-          <span className="text-white font-bold text-base sm:text-lg tracking-tight">Aura AI</span>
-          <span className="text-cyan-400/80 text-[9px] sm:text-[10px] font-medium tracking-[0.15em] uppercase mt-0.5">Vision · Intelligence</span>
-        </div>
+        <span className="text-white font-bold text-base sm:text-lg tracking-tight leading-none">Aura AI</span>
       )}
     </div>
   )

@@ -1,10 +1,9 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
-import Expertise from './components/Expertise'
+import WhyChoose from './components/WhyChoose'
 import HowWeWork from './components/HowWeWork'
 import Team from './components/Team'
-import Guarantee from './components/Guarantee'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -15,10 +14,9 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
-      <Expertise />
+      <WhyChoose />
       <HowWeWork />
       <Team />
-      <Guarantee />
       <FAQ />
       <Contact />
       <Footer />

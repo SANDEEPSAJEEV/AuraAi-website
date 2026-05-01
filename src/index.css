@@ -31,11 +31,11 @@ body {
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: #0a0a12; }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #22d3ee33, #6366f133);
+  background: linear-gradient(180deg, #22d3ee33, #3b82f633);
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #22d3ee66, #6366f166);
+  background: linear-gradient(180deg, #22d3ee66, #3b82f666);
 }
 
 /* Selection */
@@ -63,6 +63,19 @@ body {
 @keyframes shimmer {
   0% { background-position: -1000px 0; }
   100% { background-position: 1000px 0; }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 .animate-float {
