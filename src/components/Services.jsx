@@ -2,8 +2,8 @@ import ScrollReveal from './ScrollReveal'
 
 const solutions = [
   {
-    title: 'Computer Vision',
-    desc: 'Industrial inspection, defect detection',
+    title: 'Vision & Perception Systems',
+    desc: 'Advanced spatial intelligence for operational scale',
     bg: 'bg-purple-50',
     iconBg: 'bg-purple-100',
     iconText: 'text-purple-600',
@@ -16,8 +16,8 @@ const solutions = [
     ),
   },
   {
-    title: 'Machine Learning & DL',
-    desc: 'Model development & training',
+    title: 'Predictive Analytics',
+    desc: 'From data modeling to intelligent forecasting',
     bg: 'bg-blue-50',
     iconBg: 'bg-blue-100',
     iconText: 'text-blue-600',
@@ -29,8 +29,8 @@ const solutions = [
     ),
   },
   {
-    title: 'AI Agents',
-    desc: 'Autonomous workflows & decision-making',
+    title: 'Intelligent Automation',
+    desc: 'Autonomous workflows & cognitive decision engines',
     bg: 'bg-orange-50',
     iconBg: 'bg-orange-100',
     iconText: 'text-orange-600',
@@ -43,8 +43,8 @@ const solutions = [
     ),
   },
   {
-    title: 'Scalable Infrastructure',
-    desc: 'MLOps, deployment & monitoring',
+    title: 'Enterprise Infrastructure',
+    desc: 'Secure, scalable deployment for production-grade ML',
     bg: 'bg-emerald-50',
     iconBg: 'bg-emerald-100',
     iconText: 'text-emerald-600',
@@ -78,9 +78,8 @@ export default function Services() {
                 Solutions & Services
               </h2>
               <p className="text-slate-600 leading-relaxed mb-10 text-lg">
-                Delivering production-grade AI: from industrial computer vision and custom deep learning
-                models to autonomous agents and scalable, monitored deployments. Aura AI partners with
-                engineering teams to design, build, and operate performant ML systems tailored to domain demands.
+                Architecting enterprise-grade AI solutions that drive measurable business impact. We partner with 
+                industry leaders to deploy scalable, intelligent infrastructure that transforms operational workflows.
               </p>
             </ScrollReveal>
 
