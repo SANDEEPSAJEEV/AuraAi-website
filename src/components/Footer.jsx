@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="md:col-span-6">
             <Logo size={40} />
             <p className="text-slate-600 text-sm leading-relaxed mt-5 max-w-md">
-              Aura AI — small AI engineering team. Industrial CV, agentic workflows, and the data plumbing in between.
+              Aura AI — Transforming complex data into intelligent action. We engineer enterprise-grade AI solutions that turn raw information into strategic business value.
             </p>
             <a
               href="mailto:sales@aura-vision.tech"
