@@ -16,8 +16,8 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   margin: 0;
   padding: 0;
-  background: #050508;
-  color: #e2e8f0;
+  background: #f8fafc; /* light slate background */
+  color: #1e293b; /* dark slate text */
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -29,19 +29,19 @@ body {
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: #0a0a12; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #22d3ee33, #3b82f633);
+  background: #cbd5e1;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #22d3ee66, #3b82f666);
+  background: #94a3b8;
 }
 
 /* Selection */
 ::selection {
-  background: rgba(34, 211, 238, 0.3);
-  color: #fff;
+  background: rgba(107, 76, 154, 0.2); /* light purple selection */
+  color: #1e293b;
 }
 
 /* Animations */

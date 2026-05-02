@@ -46,18 +46,18 @@ const reasons = [
 
 export default function WhyChoose() {
   return (
-    <section id="why-choose" className="relative py-20 sm:py-28 bg-[#0a0a12]">
+    <section id="why-choose" className="relative py-20 sm:py-28 bg-white">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <ScrollReveal>
           <div className="text-center mb-14 sm:mb-20">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/5 text-cyan-400 text-xs font-semibold uppercase tracking-[0.15em] mb-5">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-200 bg-purple-600/5 text-purple-600 text-xs font-semibold uppercase tracking-[0.15em] mb-5">
               <span className="w-1 h-1 rounded-full bg-cyan-400" />
               Why Us
             </div>
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-5">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-slate-900 leading-tight mb-5">
               Why Choose Aura AI?
             </h2>
-            <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
               We're not just another development team. We're your strategic technology partner.
             </p>
           </div>
@@ -66,14 +66,14 @@ export default function WhyChoose() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
           {reasons.map((r, idx) => (
             <ScrollReveal key={r.title} delay={idx * 100}>
-              <div className="group h-full p-7 sm:p-8 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-cyan-400/20 hover:bg-white/[0.04] transition-all duration-500 hover:-translate-y-1">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                  <div className="w-5 h-5 text-cyan-400">
+              <div className="group h-full p-7 sm:p-8 rounded-2xl border border-slate-200 bg-white hover:border-purple-300 hover:bg-slate-50 transition-all duration-500 hover:-translate-y-1">
+                <div className="w-12 h-12 rounded-xl bg-purple-50 border border-purple-100 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                  <div className="w-5 h-5 text-purple-600">
                     {r.icon}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">{r.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{r.desc}</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">{r.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{r.desc}</p>
               </div>
             </ScrollReveal>
           ))}
@@ -82,3 +82,4 @@ export default function WhyChoose() {
     </section>
   )
 }
+

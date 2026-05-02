@@ -20,18 +20,18 @@ const capabilities = [
 
 export default function Team() {
   return (
-    <section id="capabilities" className="relative py-20 sm:py-28 bg-[#0a0a12]">
+    <section id="capabilities" className="relative py-20 sm:py-28 bg-white">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <ScrollReveal>
           <div className="text-center mb-14 sm:mb-20">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/5 text-cyan-400 text-xs font-semibold uppercase tracking-[0.15em] mb-5">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-200 bg-purple-600/5 text-purple-600 text-xs font-semibold uppercase tracking-[0.15em] mb-5">
               <span className="w-1 h-1 rounded-full bg-cyan-400" />
               Capabilities
             </div>
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-5">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-slate-900 leading-tight mb-5">
               What the team handles
             </h2>
-            <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
+            <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto">
               Below is the breakdown of what the team works across day-to-day. Real team profiles coming soon.
             </p>
           </div>
@@ -40,16 +40,16 @@ export default function Team() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
           {capabilities.map((area, idx) => (
             <ScrollReveal key={area.title} delay={idx * 100}>
-              <div className="group h-full p-6 sm:p-7 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-cyan-400/30 hover:bg-white/[0.04] hover:-translate-y-1 transition-all duration-500">
-                <div className="text-cyan-400 mb-5 transition-transform duration-500 group-hover:scale-110 origin-left">
+              <div className="group h-full p-6 sm:p-7 rounded-2xl border border-slate-200 bg-white hover:border-cyan-400/30 hover:bg-slate-50 hover:-translate-y-1 transition-all duration-500">
+                <div className="text-purple-600 mb-5 transition-transform duration-500 group-hover:scale-110 origin-left">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d={area.d} />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-5">{area.title}</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-5">{area.title}</h3>
                 <ul className="space-y-2.5">
                   {area.skills.map(skill => (
-                    <li key={skill} className="flex items-center gap-2.5 text-sm text-slate-400">
+                    <li key={skill} className="flex items-center gap-2.5 text-sm text-slate-600">
                       <span className="w-1 h-1 rounded-full bg-cyan-400/70 flex-shrink-0" />
                       {skill}
                     </li>
@@ -63,3 +63,4 @@ export default function Team() {
     </section>
   )
 }
+

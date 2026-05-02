@@ -35,7 +35,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#050508]/85 backdrop-blur-xl border-b border-white/10 py-3'
+          ? 'bg-white/90 backdrop-blur-xl border-b border-slate-200 py-3 shadow-sm'
           : 'bg-transparent py-5'
       }`}
     >
@@ -52,12 +52,12 @@ export default function Navbar() {
                 key={l.label}
                 href={l.href}
                 className={`relative px-4 py-2 text-sm font-medium transition-colors ${
-                  isActive ? 'text-white' : 'text-slate-400 hover:text-white'
+                  isActive ? 'text-purple-800' : 'text-slate-600 hover:text-purple-700'
                 }`}
               >
                 {l.label}
                 {isActive && (
-                  <span className="absolute left-1/2 -translate-x-1/2 bottom-0 w-1 h-1 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)]" />
+                  <span className="absolute left-1/2 -translate-x-1/2 bottom-0 w-1 h-1 rounded-full bg-purple-600" />
                 )}
               </a>
             )
@@ -66,36 +66,35 @@ export default function Navbar() {
 
         <a
           href="#contact"
-          className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white text-sm font-semibold rounded-lg shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/50 hover:scale-105 transition-all duration-300"
+          className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-[#6b4c9a] hover:bg-[#5a3e85] text-white text-sm font-semibold rounded shadow-sm shadow-purple-900/10 hover:shadow-purple-900/20 hover:-translate-y-0.5 transition-all duration-300"
         >
-          Get in Touch
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+          Request Demo
         </a>
 
         <button
-          className="lg:hidden text-white p-2 -mr-2"
+          className="lg:hidden text-slate-800 p-2 -mr-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
           <div className="w-6 h-5 relative flex flex-col justify-between">
-            <span className={`w-full h-0.5 bg-white rounded transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-            <span className={`w-full h-0.5 bg-white rounded transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-            <span className={`w-full h-0.5 bg-white rounded transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+            <span className={`w-full h-0.5 bg-slate-800 rounded transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+            <span className={`w-full h-0.5 bg-slate-800 rounded transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+            <span className={`w-full h-0.5 bg-slate-800 rounded transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
           </div>
         </button>
       </div>
 
       <div
         className={`lg:hidden overflow-hidden transition-all duration-400 ${
-          menuOpen ? 'max-h-96 border-t border-white/10' : 'max-h-0'
+          menuOpen ? 'max-h-96 border-t border-slate-200' : 'max-h-0'
         }`}
       >
-        <div className="bg-[#050508]/95 backdrop-blur-xl px-6 py-5 flex flex-col gap-1">
+        <div className="bg-white/95 backdrop-blur-xl px-6 py-5 flex flex-col gap-1">
           {links.map(l => (
             <a
               key={l.label}
               href={l.href}
-              className="text-slate-300 hover:text-cyan-400 text-sm font-medium py-3 px-2 border-b border-white/5 transition-colors"
+              className="text-slate-600 hover:text-purple-700 text-sm font-medium py-3 px-2 border-b border-slate-100 transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               {l.label}
@@ -103,10 +102,10 @@ export default function Navbar() {
           ))}
           <a
             href="#contact"
-            className="mt-4 px-5 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-sm font-semibold rounded-lg text-center shadow-lg shadow-cyan-500/25"
+            className="mt-4 px-5 py-3 bg-[#6b4c9a] text-white text-sm font-semibold rounded text-center shadow-sm"
             onClick={() => setMenuOpen(false)}
           >
-            Get in Touch →
+            Request Demo
           </a>
         </div>
       </div>

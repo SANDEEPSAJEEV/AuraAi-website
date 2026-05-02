@@ -29,15 +29,15 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="relative py-20 sm:py-28 bg-[#080810]">
+    <section id="faq" className="relative py-20 sm:py-28 bg-white">
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6">
         <ScrollReveal>
           <div className="text-center mb-12 sm:mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/5 text-cyan-400 text-xs font-semibold uppercase tracking-[0.15em] mb-5">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-200 bg-purple-600/5 text-purple-600 text-xs font-semibold uppercase tracking-[0.15em] mb-5">
               <span className="w-1 h-1 rounded-full bg-cyan-400" />
               Questions
             </div>
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-slate-900 leading-tight">
               Frequently asked questions.
             </h2>
           </div>
@@ -46,11 +46,11 @@ export default function FAQ() {
         <div className="space-y-4">
           {faqs.map((faq, idx) => (
             <ScrollReveal key={idx} delay={idx * 60}>
-              <div className="border border-white/5 rounded-xl bg-white/[0.02] p-5 sm:p-6">
-                <h3 className="font-semibold text-white text-base sm:text-lg mb-2">
+              <div className="border border-slate-200 rounded-xl bg-white p-5 sm:p-6">
+                <h3 className="font-semibold text-slate-900 text-base sm:text-lg mb-2">
                   {faq.q}
                 </h3>
-                <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+                <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                   {faq.a}
                 </p>
               </div>
@@ -61,3 +61,4 @@ export default function FAQ() {
     </section>
   )
 }
+
