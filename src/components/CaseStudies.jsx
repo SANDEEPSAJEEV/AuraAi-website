@@ -49,7 +49,7 @@ export default function CaseStudies() {
               <div>
                 <span className="block text-sm font-semibold text-slate-700 mb-3">Industry</span>
                 <div className="flex flex-wrap gap-4">
-                  {['Manufacturing', 'Logistics', 'Retail'].map(ind => (
+                  {['Manufacturing', 'Logistics', 'Retail', 'Fintech', 'Healthtech'].map(ind => (
                     <label key={ind} className="flex items-center gap-2 cursor-pointer">
                       <input type="checkbox" className="rounded border-slate-300 text-purple-600 focus:ring-purple-500" defaultChecked={ind === 'Manufacturing'} />
                       <span className="text-sm text-slate-700">{ind}</span>
@@ -61,7 +61,7 @@ export default function CaseStudies() {
               <div>
                 <span className="block text-sm font-semibold text-slate-700 mb-3">Technology</span>
                 <div className="flex flex-wrap gap-4">
-                  {['Computer Vision (CV)', 'Deep Learning (DL)', 'Agents'].map(tech => (
+                  {['Computer Vision (CV)', 'Deep Learning (DL)', 'Agents', 'AI & ML', 'Data Science & Analytics'].map(tech => (
                     <label key={tech} className="flex items-center gap-2 cursor-pointer">
                       <input type="checkbox" className="rounded border-slate-300 text-purple-600 focus:ring-purple-500" defaultChecked={tech.includes('Vision')} />
                       <span className="text-sm text-slate-700">{tech}</span>
